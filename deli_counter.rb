@@ -1,4 +1,5 @@
 # Write your code here.
+# <<<<<<< HEAD
 
 def line(i)
   line1 = []
@@ -25,3 +26,16 @@ def now_serving(serve)
     serve.shift
   end
 end
+=======
+def line(katz_deli)
+  if katz_deli.empty?
+    puts "The line is currently empty."
+  else
+    current_line = "The line is currently:"
+    katz_deli.each.with_index(1) do |name, index| 
+      current_line << " #{index}. #{name} "
+    end
+    puts current_line
+  end
+end
+>>>>>>> 1da0f23e12ab4bbeb437d6a4fc6f471a7d2a5235
